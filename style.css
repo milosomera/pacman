@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-image: url("images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button#btn_new_game {
+  display: block;
+}
+
+div#score,
+button#btn_new_game {
+  color: #e4e4e4;
+  border: 2px outset #575757;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 3px rgba(3, 3, 129, 0.5);
+  width: 100px;
+  margin: 20px auto 0;
+  padding: 5px 0;
+  text-align: center;
+  background-color: #343434;
+}
+
+div#container {
+  width: 560px;
+  height: 560px;
+  background-color: black;
+  margin: 20px auto 0;
+  opacity: 0.9;
+  position: relative;
+}
+
+div#world div.row {
+  display: flex;
+}
+
+div#world div.row div {
+  width: 20px;
+  height: 20px;
+}
+
+div.wall {
+  border: 2px outset #575757;
+  background-color: rgb(3, 3, 129);
+}
+
+div.coin {
+  background: url("images/coin.gif");
+}
+
+div.cherry {
+  background: url("images/cherry.png");
+}
+
+div#pacman {
+  background: url("images/pacman.gif");
+}
+
+div#blinky {
+  background: url("images/ghost_blinky.png");
+}
+
+div#clyde {
+  background: url("images/ghost_clyde.png");
+}
+
+div#inky {
+  background: url("images/ghost_inky.png");
+}
+
+div#pinky {
+  background: url("images/ghost_pinky.png");
+}
+
+div.empty {
+  background: none;
+}
+
+div.coin,
+div.cherry,
+div#pacman,
+div#blinky,
+div#clyde,
+div#inky,
+div#pinky {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+div#pacman,
+div#blinky,
+div#clyde,
+div#inky,
+div#pinky {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
