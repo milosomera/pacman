@@ -75,26 +75,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const world = worlds[Math.floor(Math.random() * worlds.length)];
 
   let score = 0;
-  const pacman = {
-    x: 1,
-    y: 26,
-  };
-  const blinky = {
-    x: 11,
-    y: 12,
-  };
-  const clyde = {
-    x: 16,
-    y: 12,
-  };
-  const inky = {
-    x: 11,
-    y: 14,
-  };
-  const pinky = {
-    x: 16,
-    y: 14,
-  };
+  class Character {
+    constructor(name, x, y) {
+      this.name = name;
+      this.x = x;
+      this.y = y;
+    }
+  }
+  const pacman = new Character("pacman", 1, 26);
+  const blinky = new Character("blinky", 11, 12);
+  const clyde = new Character("clyde", 16, 12);
+  const inky = new Character("inky", 11, 14);
+  const pinky = new Character("pinky", 16, 14);
 
   const displayWorldFn = () => {
     const output = document.createElement("div");
