@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
       this.y = y;
     }
   }
-  const pacman = new Character("pacman", 2, 26);
+  const pacman = new Character("pacman", 1, 26);
   const blinky = new Character("blinky", 11, 12);
   const clyde = new Character("clyde", 16, 12);
   const inky = new Character("inky", 11, 14);
